@@ -14,8 +14,16 @@ const HolographicCore = () => {
         { Icon: Network, color: "text-cyan-400", delay: 5 },
     ];
 
+    const [mounted, setMounted] = React.useState(false);
+
+    React.useEffect(() => {
+        setMounted(true);
+    }, []);
+
+    if (!mounted) return null;
+
     return (
-        <div className="relative w-72 h-72 md:w-96 md:h-96 mx-auto flex items-center justify-center">
+        <div className="relative w-64 h-64 md:w-96 md:h-96 mx-auto flex items-center justify-center max-w-[90vw]">
             {/* 1. Outer Data Ring (Slow Rotate) */}
             <motion.div
                 animate={{ rotate: 360 }}
@@ -75,15 +83,15 @@ const HolographicCore = () => {
                         duration: 20,
                         repeat: Infinity,
                         ease: "linear",
-                        delay: -delay * (20 / icons.length) // Distribute evenly based on duration
+                        delay: -delay * (20 / icons.length)
                     }}
                 >
                     <div
                         className={`absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-black/80 p-2 rounded-full border border-white/10 backdrop-blur-sm ${color}`}
-                        style={{ transform: 'rotate(-360deg)' }} // Counter-rotate icon to keep it upright if needed, or let it spin
+                        style={{ transform: 'rotate(-360deg)' }}
                     >
                         <motion.div
-                            animate={{ rotate: -360 }} // Counter-rotate to keep icon upright
+                            animate={{ rotate: -360 }}
                             transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                         >
                             <Icon size={20} />
@@ -92,28 +100,27 @@ const HolographicCore = () => {
                 </motion.div>
             ))}
 
-            {/* 7. Floating Data Particles */}
-            {[...Array(6)].map((_, i) => (
-                <motion.div
-                    key={`particle-${i}`}
-                    className="absolute w-2 h-2 bg-white rounded-full"
-                    initial={{ opacity: 0, scale: 0 }}
-                    animate={{
-                        opacity: [0, 1, 0],
-                        scale: [0, 1, 0],
-                        x: [0, (Math.random() - 0.5) * 200],
-                        y: [0, (Math.random() - 0.5) * 200],
-                    }}
-                    transition={{
-                        duration: 2 + Math.random() * 2,
-                        repeat: Infinity,
-                        delay: Math.random() * 2
-                    }}
-                />
-            ))}
-
-            {/* 8. Holographic Scanline Overlay */}
+            {/* 7. Floating Data Particles - Constrained */}
             <div className="absolute inset-0 rounded-full overflow-hidden pointer-events-none">
+                {[...Array(6)].map((_, i) => (
+                    <motion.div
+                        key={`particle-${i}`}
+                        className="absolute w-2 h-2 bg-white rounded-full left-1/2 top-1/2"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{
+                            opacity: [0, 1, 0],
+                            scale: [0, 1, 0],
+                            x: [0, (Math.random() - 0.5) * 150],
+                            y: [0, (Math.random() - 0.5) * 150],
+                        }}
+                        transition={{
+                            duration: 2 + Math.random() * 2,
+                            repeat: Infinity,
+                            delay: Math.random() * 2
+                        }}
+                    />
+                ))}
+                {/* 8. Holographic Scanline Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-500/10 to-transparent animate-scan" />
             </div>
         </div>

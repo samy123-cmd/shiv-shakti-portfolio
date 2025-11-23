@@ -10,7 +10,7 @@ import GlitchText from './GlitchText';
 
 const Hero = () => {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center relative px-6 py-20">
+        <section id="hero" className="min-h-screen flex items-center justify-center relative px-6 py-20 overflow-hidden">
             <div className="max-w-7xl w-full z-10">
                 <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left: Text Content */}
@@ -93,7 +93,7 @@ const Hero = () => {
                         initial={{ opacity: 0, scale: 0.8 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.8, delay: 0.2 }}
-                        className="order-1 lg:order-2"
+                        className="order-1 lg:order-2 flex justify-center items-center"
                     >
                         <HolographicCore />
                     </motion.div>
