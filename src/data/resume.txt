@@ -1,0 +1,75 @@
+Shiv Shakti Mishra                       
+ETL DataStage Consultant | Data Integration Specialist                                                                                                                                                                                                                                                 
+ pmishra273@gmail.com | +916363006958 | Pune MH | www.linkedin.com/in/shivmishra1408  | www.github.com/unpairedelectron                   
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 
+Summary
+
+ETL / Data Engineer with 7+ years of experience in designing, developing, and optimizing enterprise data pipelines using IBM InfoSphere DataStage, SQL, Unix, Snowflake, Kafka, PySpark, and Azure Data Factory. 
+Proven expertise in data migration, performance tuning, dimensional modelling, and building reliable, scalable ETL architectures across financial, banking, and retail domains. 
+Strong ability to collaborate with business and architecture teams to deliver consistent high-quality data integration solutions.
+
+
+Skills
+
+•	ETL Tools: IBM DataStage (Parallel Jobs, Server Jobs, Sequences), Informatica PowerCenter
+•	Databases: Oracle, DB2, SQL Server, Teradata, Snowflake, Confluent Kafka
+•	Scheduling & Automation: Control-M, Autosys, Unix/Linux Shell Scripting
+•	AI & Data Intelligence: AI-assisted anomaly detection, automated data validation, rule-based & ML-driven data quality checks, LLM workflow integration (Python)
+•	Data Warehousing Concepts: Star schema, SCD Type 1 & 2, fact/dimension modelling, Data Quality Frameworks
+•	Tools & Devops: Git, Jira, Confluence, ServiceNow
+
+
+Work Experience 
+
+ Cognizant Technology Services - Associate
+
+Nov 2022 – Current   
+                                                                                                                             
+ Pune,MH
+
+   Tech: DataStage, Snowflake, ADF, Kafka, PySpark, Oracle, Unix, Control-M
+
+•	Designed & optimized large-scale DataStage ETL pipelines, improving batch performance by 30%.
+•	Led DataStage → Snowflake migration for enterprise finance reporting workloads.
+•	Developed reusable ETL frameworks (parameterization, audit, restart ability) to standardize pipelines.
+•	Integrated Kafka streaming workflows for near real-time ingestion and transformation.
+•	Built AI-assisted anomaly detection & automated data validation scripts, increasing data reliability and reducing manual checks.
+•	Coordinated UAT, production deployments, and root cause analysis for data issues.
+
+
+UST Global – Software Developer III
+Jan 2022 – Nov 2022
+Noida, UP
+
+Tech: DataStage, Oracle, Unix, Control-M
+
+•	 Developed and optimized DataStage parallel jobs for high-volume data processing.
+•	Automated workflows and monitoring using Unix Shell Scripting + Control-M.
+•	Coordinated with QA and business teams to resolve data mapping & quality issues.
+.
+
+
+Capgemini Technology Services – Associate Consultant
+August 2018 - Dec 2021	
+Bengaluru, KA
+
+Tech: DataStage, DB2, Control-M, SQL, Unix
+
+•	Built and maintained DataStage ETL pipelines supporting enterprise reporting.
+•	Implemented SCD Type 1 & Type 2 logic and dimensional modelling patterns.
+•	Supported UAT, production stability, and performance improvement cycles.
+
+Certification
+
+•	IBM DataStage Developer Certification
+•	Microsoft Certified: Azure Data Fundamentals
+•	AWS Certified Cloud Practitioner
+•	SAFe 5 Practitioner
+•	Databricks Certified Generative AI Engineer Associate
+
+   
+Education
+
+GLA University, Mathura, IN
+Bachelor of Technology | Graduated: 2018
+

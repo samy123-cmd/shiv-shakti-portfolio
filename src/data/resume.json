@@ -1,0 +1,144 @@
+{
+    "summary": "ETL / Data Engineer with 7+ years of experience in designing, developing, and optimizing enterprise data pipelines using IBM InfoSphere DataStage, SQL, Unix, Snowflake, Kafka, PySpark, and Azure Data Factory. Proven expertise in data migration, performance tuning, dimensional modelling, and building reliable, scalable ETL architectures across financial, banking, and retail domains. Strong ability to collaborate with business and architecture teams to deliver consistent high-quality data integration solutions.",
+    "skills": [
+        {
+            "category": "ETL Tools",
+            "items": [
+                "IBM DataStage (Parallel Jobs, Server Jobs, Sequences)",
+                "Informatica PowerCenter"
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                "Oracle",
+                "DB2",
+                "SQL Server",
+                "Teradata",
+                "Snowflake",
+                "Confluent Kafka"
+            ]
+        },
+        {
+            "category": "Scheduling & Automation",
+            "items": [
+                "Control-M",
+                "Autosys",
+                "Unix/Linux Shell Scripting"
+            ]
+        },
+        {
+            "category": "AI & Data Intelligence",
+            "items": [
+                "Generative AI",
+                "Databricks",
+                "Vector Search",
+                "Model Serving",
+                "MLflow",
+                "Unity Catalog",
+                "RAG applications",
+                "LLM chains"
+            ]
+        },
+        {
+            "category": "Data Warehousing Concepts",
+            "items": [
+                "Star schema",
+                "SCD Type 1 & Type 2",
+                "fact/dimension modelling",
+                "Data Quality Frameworks"
+            ]
+        },
+        {
+            "category": "Tools & Devops",
+            "items": [
+                "Git",
+                "Jira",
+                "Confluence",
+                "ServiceNow"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "company": "Cognizant Technology Services",
+            "role": "ETL DataStage Consultant",
+            "period": "Nov 2022 – Present",
+            "location": "Pune, MH",
+            "tech": [
+                "DataStage",
+                "Snowflake",
+                "ADF",
+                "Kafka",
+                "PySpark",
+                "Oracle",
+                "Unix",
+                "Control-M"
+            ],
+            "highlights": [
+                "Designed & optimized large-scale DataStage ETL pipelines, improving batch performance by 30%.",
+                "Led DataStage → Snowflake migration for enterprise finance reporting workloads.",
+                "Developed reusable ETL frameworks (parameterization, audit, restart ability) to standardize pipelines.",
+                "Integrated Kafka streaming workflows for near real-time ingestion and transformation.",
+                "Built AI-assisted anomaly detection & automated data validation scripts, increasing data reliability and reducing manual checks.",
+                "Coordinated UAT, production deployments, and root cause analysis for data issues."
+            ]
+        },
+        {
+            "company": "UST Global",
+            "role": "Software Developer III",
+            "period": "Jan 2022 – Nov 2022",
+            "location": "Noida, UP",
+            "tech": [
+                "DataStage",
+                "Oracle",
+                "Unix",
+                "Control-M"
+            ],
+            "highlights": [
+                "Developed and optimized DataStage parallel jobs for high-volume data processing.",
+                "Automated workflows and monitoring using Unix Shell Scripting + Control-M.",
+                "Coordinated with QA and business teams to resolve data mapping & quality issues."
+            ]
+        },
+        {
+            "company": "Capgemini Technology Services",
+            "role": "Associate Consultant",
+            "period": "Aug 2018 – Dec 2021",
+            "location": "Bengaluru, KA",
+            "tech": [
+                "DataStage",
+                "DB2",
+                "Control-M",
+                "SQL",
+                "Unix"
+            ],
+            "highlights": [
+                "Built and maintained DataStage ETL pipelines supporting enterprise reporting.",
+                "Implemented SCD Type 1 & Type 2 logic and dimensional modelling patterns.",
+                "Supported UAT, production stability, and performance improvement cycles."
+            ]
+        }
+    ],
+    "certifications": [
+        "IBM DataStage Developer Certification",
+        "Microsoft Certified: Azure Data Fundamentals",
+        "AWS Certified Cloud Practitioner",
+        "SAFe 5 Practitioner",
+        "Databricks Certified Generative AI Engineer Associate"
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Technology",
+            "institution": "GLA University, Mathura, IN",
+            "year": "2018"
+        }
+    ],
+    "contact": {
+        "email": "pmishra273@gmail.com",
+        "phone": "+916363006958",
+        "location": "Pune, MH",
+        "linkedin": "https://www.linkedin.com/in/shivmishra1408",
+        "github": "https://github.com/unpairedelectron"
+    }
+}
