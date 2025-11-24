@@ -1,6 +1,8 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-@theme {
+:root {
   /* Dark Gradient Theme */
   --color-dark-bg: #000000;
   --color-glass-bg: rgba(255, 255, 255, 0.05);
@@ -42,4 +44,21 @@ h6 {
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-glass-border);
+}
+
+/* Custom animations */
+@keyframes scan {
+
+  0%,
+  100% {
+    transform: translateY(-100%);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+}
+
+.animate-scan {
+  animation: scan 4s linear infinite;
 }
