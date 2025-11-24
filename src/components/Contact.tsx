@@ -13,8 +13,15 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
+        const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
+        if (!formId) {
+            alert('Formspree ID not configured. Please add NEXT_PUBLIC_FORMSPREE_ID to environment variables.');
+            setIsSubmitting(false);
+            return;
+        }
+
         try {
-            const response = await fetch('/api/contact', {
+            const response = await fetch(`https://formspree.io/f/${formId}`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -25,8 +32,6 @@ const Contact = () => {
             if (response.ok) {
                 setIsSent(true);
                 setFormState({ name: '', email: '', message: '' });
-
-                // Reset success message after 5 seconds
                 setTimeout(() => setIsSent(false), 5000);
             } else {
                 console.error('Failed to send message');
