@@ -13,12 +13,8 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
-        if (!accessKey) {
-            alert('Web3Forms Access Key not configured. Please add NEXT_PUBLIC_WEB3FORMS_KEY to environment variables.');
-            setIsSubmitting(false);
-            return;
-        }
+        // Web3Forms Access Key (Public)
+        const accessKey = "f9b3844e-2b04-427d-9f53-98f3e7e83f1d";
 
         try {
             const response = await fetch('https://api.web3forms.com/submit', {
