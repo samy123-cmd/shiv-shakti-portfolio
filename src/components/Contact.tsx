@@ -13,28 +13,33 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        const formId = process.env.NEXT_PUBLIC_FORMSPREE_ID;
-        if (!formId) {
-            alert('Formspree ID not configured. Please add NEXT_PUBLIC_FORMSPREE_ID to environment variables.');
+        const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_KEY;
+        if (!accessKey) {
+            alert('Web3Forms Access Key not configured. Please add NEXT_PUBLIC_WEB3FORMS_KEY to environment variables.');
             setIsSubmitting(false);
             return;
         }
 
         try {
-            const response = await fetch(`https://formspree.io/f/${formId}`, {
+            const response = await fetch('https://api.web3forms.com/submit', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(formState),
+                body: JSON.stringify({
+                    access_key: accessKey,
+                    ...formState,
+                }),
             });
 
-            if (response.ok) {
+            const result = await response.json();
+
+            if (result.success) {
                 setIsSent(true);
                 setFormState({ name: '', email: '', message: '' });
                 setTimeout(() => setIsSent(false), 5000);
             } else {
-                console.error('Failed to send message');
+                console.error('Failed to send message:', result);
                 alert('Failed to send message. Please try again.');
             }
         } catch (error) {
